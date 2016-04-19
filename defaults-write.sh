@@ -129,7 +129,7 @@ defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 # 以下，表示スタイルが "アイコン" の状態 で，ココカラ {
 # finder のメニュー [表示] > [表示オプション] で開くダイアログ [デスクトップ]/[<それぞれのアイテム名>] の chb[項目の情報を表示] = オン
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist
-/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist
+#usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist
 /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist
 
 # デスクトップをアクティブにし，finder のメニュー [表示] > [表示オプション] - [デスクトップ] ダイアログの rbt[ラベルの位置] = [右側]
@@ -137,17 +137,17 @@ defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 
 # finder のメニュー [表示] > [表示オプション] で開くダイアログ [デスクトップ]/[<それぞれのアイテム名>] の pmn[並び順序] = [グリッドに沿う]
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy kind" ~/Library/Preferences/com.apple.finder.plist
-/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy kind" ~/Library/Preferences/com.apple.finder.plist
+#/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy kind" ~/Library/Preferences/com.apple.finder.plist
 /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy kind" ~/Library/Preferences/com.apple.finder.plist
 
 # finder のメニュー [表示] > [表示オプション] で開くダイアログ [デスクトップ]/[<それぞれのアイテム名>] の sld[グリッド間隔] = 100 px (なんとなく 1/8 くらい)
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:gridSpacing 100" ~/Library/Preferences/com.apple.finder.plist
-/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:gridSpacing 100" ~/Library/Preferences/com.apple.finder.plist
+#/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:gridSpacing 100" ~/Library/Preferences/com.apple.finder.plist
 /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:gridSpacing 100" ~/Library/Preferences/com.apple.finder.plist
 
 # finder のメニュー [表示] > [表示オプション] で開くダイアログ [デスクトップ]/[<それぞれのアイテム名>] の sld[アイコンサイズ] = 80 px
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:iconSize 48" ~/Library/Preferences/com.apple.finder.plist
-/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:iconSize 48" ~/Library/Preferences/com.apple.finder.plist
+#/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:iconSize 48" ~/Library/Preferences/com.apple.finder.plist
 /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:iconSize 48" ~/Library/Preferences/com.apple.finder.plist
 # } 以上，表示スタイルが "アイコン" の状態 で，はココマデ
 
