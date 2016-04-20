@@ -5,6 +5,8 @@
 # Ask for the administrator password upfront
 sudo -v
 
+set -e
+
 # Keep-alive: update existing `sudo` time stamp until `.osx` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
@@ -226,7 +228,7 @@ defaults write com.apple.DiskUtility advanced-image-options -bool true
 ###############################################################################
 
 for app in "Dashboard" "Dock" "Finder" \
-    "Safari" "SystemUIServer" "Terminal" \
+    "Safari" "SystemUIServer" \
     "iTunes"; do
     killall "$app" > /dev/null 2>&1
 done
